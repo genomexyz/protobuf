@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+message Address {
+  string street = 1;
+  string town = 2;
+  string postode = 3;
+}
+
+message Person {
+  string _id = 1;
+  string name = 2;
+  string dob = 3;
+  Address address = 4;
+  string telephone = 5;
+  repeated string pets = 6;
+  float score = 7;
+  string email = 8;
+  string url = 9;
+  string description = 10;
+  bool verified = 11;
+  int32 salary = 12;
+}
+
+message CtRoot {
+  repeated Person ctRoot = 1;
+}
